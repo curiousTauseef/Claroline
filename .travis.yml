@@ -47,6 +47,6 @@ before_script:
   - export SYMFONY_DEPRECATIONS_HELPER=weak
 
 script:
-  - ./vendor/bin/simple-phpunit -c vendor/claroline/distribution
+  - ./vendor/bin/simple-phpunit --dont-report-useless-tests -c vendor/claroline/distribution
   # TODO : enable when JS test suite is fixed
   # - node_modules/.bin/karma start vendor/claroline/distribution/karma.conf.js --single-run
